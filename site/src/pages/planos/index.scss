@@ -1,0 +1,473 @@
+#Plano{
+
+      .explain{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: start;
+        
+
+        width: 100rem;
+        height: 33rem; //
+        padding: 20px 20px;
+
+        .explain-1{
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+       
+          width: 30rem;
+          height: 28rem;
+          justify-content: space-around;
+          margin: 0;
+          padding: 0; 
+          .explain-part1{
+            display:flex;
+            
+
+            .explain-1-benefis{
+              display: block;
+              width: 30rem;
+              border-radius: 10px;
+              background-color: rgba(41, 41, 41, 1);
+              text-align: start;
+              padding: 15px;
+              height: 14rem;
+            }
+          }
+          .explain-part2{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+       
+          
+            .explain-1-jogos{
+              display: block;
+              width: 14.2rem;
+              padding: 15px;
+              background-color: rgba(214, 104, 70, 1);
+              border-radius: 10px;
+            }
+
+            .explain-1-engine{
+              display: block;
+              width: 15rem;
+              padding: 15px;
+              background-color: rgba(64, 133, 197, 1);
+              margin-left: 12px;
+              border-radius: 10px;
+            }
+          }
+          
+        }
+        .explain-2{
+          display: flex;
+          width: 35rem;
+          height:28rem;
+          align-items: center;
+          justify-content: center;
+          .explain-2-logo{
+            display: flex;
+          }
+        }
+
+        .explain-3{
+          display: flex;
+          width: 32rem;
+          height: 28rem;
+          background-color: blue;
+          
+          .explain-3-tools{
+            display: flex;
+            background-image:url('../../../public/assets/images/GameSync/Rectangle\ 860.png') ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            width: 100%;
+            height: 100%;
+            justify-content: baseline;
+            align-items:end;
+            padding: 20px;
+            font-size: larger;
+          }
+        }
+      }
+
+      
+      .planos1{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+        
+        width: 100rem;
+        height: 24rem; //
+        padding: 20px 20px;
+
+        .planos1-title{
+          display: block;
+          padding: 10px;
+        }
+
+        .planos1-gamers{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          
+          width: 100%;
+          height: auto;
+          
+          .planos1-gamers-Recursos > h1{
+            height: 60px;
+          }
+          .planos1-gamers-Recursos{
+            display: flex;
+            flex-direction: column;
+            width:31rem;
+            height: 18rem;
+            background-color: rgba(43, 43, 43, 1);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+
+            .planos1-gamers-Recursos-p{
+              display: grid;
+              gap: 10px 30px;
+            }
+          }
+
+          .planos1-gamers-Diamond > h1{
+            height: 60px;
+          }
+            
+          .planos1-gamers-Diamond{
+            display: flex;
+            flex-direction: column;
+            width: 31rem;
+            height: 20rem;
+            background-color: rgba(43, 43, 43, 1);
+            padding: 10px 20px;
+            border-radius: 10px;
+
+            .planos1-gamers-Recursos-g{
+              display: grid;
+              gap: 10px 30px;
+            }
+            .planos1-gamers-Recursos-g > p{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 29rem;
+            }
+          }
+
+          .planos1-gamers-Gold > h1{
+            height: 60px;
+          }
+          .planos1-gamers-Gold{
+            display: flex;
+            flex-direction: column;
+            width: 31rem;
+            height: 20rem;
+            background-color: rgba(43, 43, 43, 1);
+            padding: 10px 20px;
+            border-radius: 10px;
+
+            .planos1-gamers-Recursos-o{
+              display: grid;
+              gap: 10px 30px;
+            }
+            .planos1-gamers-Recursos-o > p{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 29rem;
+            }
+          }
+        }
+      }
+
+      
+      .preco1{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        justify-content: space-between;
+        align-items: start;
+       
+        width: 100rem;
+        padding: 20px 20px;
+
+        .preco1-mes{
+          display: flex;
+          align-items: center;
+          border-radius: 10px;
+          background-color: rgba(43, 43, 43, 1);
+          width:31rem;
+          height: 4rem;
+          padding: 20px;
+        }
+        
+        .preco1-acao1{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          justify-content: space-between;
+         
+          width:31rem;
+          height: 4rem;
+
+          .preco1-acao1-first > p{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(43, 43, 43, 1);
+            width: 5.5rem;
+            height: 3rem;
+            border: none;
+            border-radius: 10px;
+            font-size: smaller;
+          }
+          .preco1-acao1-second > button{
+            width: 24rem;
+            height: 3rem;
+            background-color: rgba(83, 108, 198, 1);
+            color: white;
+            border: none;
+            border-radius: 10px;
+          }
+        }
+
+        .preco1-acao2{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          justify-content: space-between;
+          
+          width:31rem;
+          height: 4rem;
+
+          .preco1-acao1-third > p{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(43, 43, 43, 1);
+            width: 5.5rem;
+            height: 3rem;
+            border: none;
+            border-radius: 10px;
+            font-size: smaller;
+          }
+          .preco1-acao1-fourth > button{
+            width: 24rem;
+            height: 3rem;
+            background-color: rgba(83, 108, 198, 1);
+            color: white;
+            border: none;
+            border-radius: 10px;
+          }
+        }
+      }
+      
+      .planos2{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+       
+        width: 67rem;
+        height: 24rem; //
+        padding: 20px 20px;
+
+        .planos2-title{
+          display: block;
+          padding: 10px;
+        }
+
+        .planos2-gamers{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+         
+          width: 100%;
+          height: auto;
+          
+          .planos2-gamers-Recursos > h1{
+            height: 60px;
+          }
+          .planos2-gamers-Recursos{
+            display: flex;
+            flex-direction: column;
+            width:31rem;
+            height: 18rem;
+            background-color: rgba(43, 43, 43, 1);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+
+            .planos2-gamers-Recursos-p{
+              display: grid;
+              gap: 10px 30px;
+            }
+          }
+
+          .planos2-gamers-Programer > h1{
+            height: 60px;
+          }
+          
+          .planos2-gamers-Programer{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 31rem;
+            height: 20rem;
+            background-color: rgba(43, 43, 43, 1);
+            border-radius: 10px;
+            padding: 10px 20px;
+
+            .planos2-gamers-Programer-o{
+              display: grid;
+              gap: 10px 30px;
+
+              .kkkk{
+                height: 4.1rem;
+              }
+            }
+            .planos2-gamers-Programer-o > p{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 29rem;
+            }
+        } 
+       }
+     }
+     .preco2{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      justify-content: space-between;
+      align-items: start;
+    
+      width: 67rem;
+      padding: 20px 20px;
+
+      .preco2-mes{
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        background-color: rgba(43, 43, 43, 1);
+        width:31rem;
+        height: 4rem;
+        padding: 20px;
+      }
+      .preco2-acao1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+       
+        width:31rem;
+        height: 4rem;
+
+        .preco2-acao1-first > p{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: rgba(43, 43, 43, 1);
+          width: 5.5rem;
+          height: 3rem;
+          border: none;
+          border-radius: 10px;
+          font-size: smaller;
+        }
+        .preco2-acao1-second > button{
+          width: 24rem;
+          height: 3rem;
+          background-color: rgba(83, 108, 198, 1);
+          color: white;
+          border: none;
+          border-radius: 10px;
+        }
+      }
+    }
+
+    .perguntas{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      justify-content: space-around;
+      align-items: flex-start;
+
+      height: 22rem;
+      width: 67rem;
+      padding: 20px 20px;
+
+      .perguntas-title{
+
+      }
+      .perguntas-1{
+        display: flex;
+        background-color: rgba(43, 43, 43, 1);
+        width: 97rem;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .perguntas-2{
+        display: flex;
+        background-color: rgba(43, 43, 43, 1);
+        width: 97rem;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .perguntas-3{
+        display: flex;
+        background-color: rgba(43, 43, 43, 1);
+        width: 97rem;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .perguntas-4{
+        display: flex;
+        background-color: rgba(43, 43, 43, 1);
+        width: 97rem;
+        padding: 10px;
+        border-radius: 10px;
+      }
+    }
+    
+    
+    @media screen and (min-width: 2560px) and (min-height: 1440px) {
+        /* Estilos para dispositivos com resolução 2560x1440 ou superior */
+        
+      }
+      
+      @media screen and (min-width: 1920px) and (min-height: 1080px) {
+        /* Estilos para dispositivos com resolução 1920x1080 ou superior */
+      
+      }
+      
+      @media screen and (min-width: 1680px) and (min-height: 1050px) {
+        
+        
+      }
+
+      @media screen and (min-width: 1440px) and (min-height: 900px) {
+        
+      }
+
+      @media screen and (min-width: 1024px) and (min-height: 768px) {
+        
+      }
+
+      @media screen and (min-width: 375px) and (min-height: 667px) {
+      
+      }
+
+      @media screen and (min-width: 320px) and (min-height: 568px) {
+       
+      }
+}
