@@ -38,7 +38,7 @@ export default function Planos(){
 
                 <section className='explain-2'>
                     <div className='explain-2-logo'>
-                        <img src="assets/images/GameSync/giphy (1).gif" alt="" />
+                        <img src="assets/images/GameSync/giphy-1--unscreen.gif" alt="" />
                     </div>
                 </section>
 
@@ -123,7 +123,7 @@ export default function Planos(){
                         </div>
 
                         <div className='preco1-acao1-second'>
-                            <button>Assinar</button>
+                            <button className='botao'>Assinar</button>
                         </div>
                     </div>
 
@@ -133,7 +133,7 @@ export default function Planos(){
                         </div>
 
                         <div className='preco1-acao1-fourth'>
-                            <button>Assinar</button>
+                            <button className='botao'>Assinar</button>
                         </div>
                     </div>
 
@@ -191,7 +191,7 @@ export default function Planos(){
                         </div>
 
                         <div className='preco2-acao1-second'>
-                            <button>Assinar</button>
+                            <button className='botao'>Assinar</button>
                         </div>
                     </div>
                 </article>
