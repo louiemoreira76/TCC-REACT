@@ -40,6 +40,16 @@
                 padding: 0px 20px;
                 background-color: #323232;
             }
+
+            .links{
+            color: white;
+            text-decoration: none; 
+            font-weight: bold; 
+            cursor: pointer;
+            }
+            .links:hover{
+                color: rgb(0, 0, 0);
+            }
         }
 
         #perfil {

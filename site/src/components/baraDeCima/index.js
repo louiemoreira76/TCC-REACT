@@ -10,7 +10,7 @@ export default function BarraDeCima (props) {
                     <input type="text" placeholder="procurar na GameSync"/>
                     <p>Descobrir</p>
                     <p>Navegar</p>
-                    <Link to="/planos">Planos</Link>
+                    <Link to="/planos" className='links'>Planos</Link>
                     <p>Nuvem</p>
                 </div>
 

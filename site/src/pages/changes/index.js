@@ -4,7 +4,7 @@ import { useState } from 'react'
 import BarraLateral from '../../components/barraLateral'
 import BarraDeCima from '../../components/baraDeCima'
 
-import MudarColor from '../../components/colors'
+
 import LinksPerfil from '../../components/perfil_mudar_links/'
 
 export default function MudarPerfil(){
