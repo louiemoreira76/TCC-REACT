@@ -15,15 +15,13 @@ return(
                 <div className='search-bar'>
 
                     <button className='search-button'>
-                        Voltar
+                        <a href="http://localhost:3000/procurar">Voltar</a>
                     </button>
                     <input className='search-image-frame' type='text' placeholder='Pesquise por Jogos para Ver as Conquistas'>
                     </input>
 
                     <div className='user-search-frame'>
-
                         <img className='user-search-perfil' src="assets/images/GameSync/User.png"/>
-
                     </div>
 
                 </div>
@@ -33,9 +31,6 @@ return(
                         <p>O personagem Leatherface teve como inspiração o assassino serial Ed Gein, (1906-1984), que deu origem a outros vilões em outros livros e filmes, mas o caso real do assassino é bem mais monstruoso do que qualquer ficção. Sua primeira vítima foi seu irmão Henry, morto em 1944, embora nada tenha sido provado na época. No ano seguinte, a mãe dele morreu, e então Gein perdeu a razão e, eventualmente, começou a criar roupas e acessórios dos corpos de suas vítimas, das quais guardava os órgãos na sua casa.</p>
                     </div>
                 </div>
-
-
-
 
             </div>
         </div>

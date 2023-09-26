@@ -1,4 +1,7 @@
+
+
 #Conquista {
+    width: 1600px;
     
     .image-frame{
         display: flex;
@@ -8,43 +11,47 @@
         .image-main{
             display: flex;
             align-items: start;
-            background-image:linear-gradient(rgba(0, 0, 0, 0.795) 50%, rgba(0,0,0,0) ), url('../../../public/assets/images/teste/jogo.jpg');
+            background-image:linear-gradient(rgba(0, 0, 0, 0.795) , rgba(0, 0, 0, 0.61) 95%), url('../../../public/assets/images/teste/jogo.jpg');
             background-size: cover;
         
             flex-direction: column;
         
-            height: 60rem;
-            width: 110rem;
-            padding-left: 10px;
-            padding-bottom: 60px;
-            
+            height: 50rem;
+            width: 100%;
+            padding: 20px;
+            border-radius: 20px;
         }
         
         .search-bar{
-        display: flex;
-        flex-direction: row;
-        align-items: end;
-        
-        padding: 20px;
-        width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: end;    
+            width: 100%;
         }
         
         .search-button {
             color: #ffffff;
             background-color: #333333;
 
-
             outline: none;
             border: none;
             border-radius: 50px;
             padding: 10px 20px;
             margin: 3px 10px;
+            transition: 0.3s;
+
+            > a {
+                color: #ffffff;
+                text-decoration: none;
+            }
+        }
+
+        .search-button:hover {
+            background-color: rgb(90, 90, 90);
         }
         
         .search-image-frame {
-                
-
-                width: 90%;
+                width: 100%;
                 height: 40px;
 
                 border-radius: 50px;
@@ -53,11 +60,9 @@
 
                 padding: 20px;
                 margin-right: 20px;
-                
 
                 background-color: #333333;
-                color: #ffffff;
-                
+                color: #ffffff;      
         }
         
         .user-search-frame {
@@ -66,20 +71,18 @@
             display: flex;
             align-items: center;
 
-            height: 45px;
-            width: 45px;
+            height: 40px;
+            width: 40px;
+            padding: 10px;
             border-radius: 100px;
             background-color: #ffffff;
-        }
 
-        .user-search-perfil {
-
-            height: 30px;
-            width: 30px;
+            > img {
+                height: 100%;
+            }
         }
 
         .section-texts{
-            margin-left: 40px;
             height: 100%;
         }
         .text-conquistas{
@@ -101,13 +104,15 @@
         }
     }
     .achivements {
-        padding: 50px 40px;
-        
-
 
         .achivements-sections{
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
+            align-items: start;
+
+            padding: 30px 0px;
+            width: 100%;
 
             .title-achive {
                 display: flex;
@@ -124,7 +129,6 @@
                 align-items: start;
                 justify-content: start;
                 width: 550px;
-                margin-left: 30px;
 
                 .block-points p {
                     font-size: 25px;
@@ -138,9 +142,9 @@
 
                     background-image:linear-gradient( rgba(64, 180, 205), rgba(37,97,140));
 
-                    width: 450px;
-                    height: 350px;
-                    margin-top: 35px;
+                    width: 360px;
+                    height: 290px;
+                    margin-top: 30px;
                     border-radius: 20px;
 
                     .points-img {
@@ -180,7 +184,7 @@
             .section-right{
 
                 .search-achives {
-                    width: 1030px;
+                    width: 1100px;
                     height: 40px;
                     border-radius: 20px;
                     border: none;
@@ -194,10 +198,10 @@
                     display: flex;
                     flex-direction: row;
                     flex-wrap: wrap;
-                    width: 1040px;
+                    width: 1100px;
+                    gap: 33px;
 
-                    .awards{
-                        height: 350px;
+                    .awards{ 
 
                         .awards-s1{
                             display: flex;
@@ -217,7 +221,6 @@
                             position: relative;
                             top: -10px;
                             border-radius: 0px 0px 10px 10px;
-                            margin-right: 10px;
                         }
                     }
                 }

@@ -1,4 +1,24 @@
 #Plano{
+    width: 1600px;
+
+    .barrinha  {
+      width: 100%;
+      height: 3px;
+      border-radius: 10px;
+      background-color: rgb(53, 53, 53);
+    }
+
+    .a {
+      background-color: rgba(19, 158, 201, 0.479)
+    }
+
+    .b {
+      background-color: rgba(132, 18, 177, 0.479)
+    }
+
+    .c {
+      background-color: rgba(167, 167, 167, 0.479)
+    }
 
       .explain{
         display: flex;
@@ -45,7 +65,7 @@
               display: block;
               width: 14.2rem;
               padding: 15px;
-              background-color: rgba(214, 104, 70, 1);
+              background: linear-gradient(180deg, #a146d6, #63097a);
               border-radius: 10px;
             }
 
@@ -75,7 +95,6 @@
           display: flex;
           width: 32rem;
           height: 28rem;
-          background-color: blue;
           
           .explain-3-tools{
             display: flex;
@@ -89,6 +108,7 @@
             align-items:end;
             padding: 20px;
             font-size: larger;
+            border-radius: 10px;
           }
         }
       }
@@ -116,6 +136,8 @@
           
           width: 100%;
           height: auto;
+
+    
           
           .planos1-gamers-Recursos > h1{
             height: 60px;
@@ -145,7 +167,7 @@
             flex-direction: column;
             width: 31rem;
             height: 20rem;
-            background: linear-gradient(to bottom, rgba(82, 209, 226, 1), rgba(21, 109, 99, 1));
+            background: linear-gradient(to bottom, rgb(83, 187, 201) 80%, rgba(21, 109, 99, 1));
             padding: 10px 20px;
             border-radius: 10px;
 
@@ -169,7 +191,7 @@
             flex-direction: column;
             width: 31rem;
             height: 20rem;
-            background: linear-gradient(to bottom, rgba(211, 200, 97, 1), rgba(187, 75, 12, 1));
+            background: rgb(164, 68, 209);
             padding: 10px 20px;
             border-radius: 10px;
 
@@ -402,45 +424,37 @@
       justify-content: space-around;
       align-items: flex-start;
 
-      height: 22rem;
-      width: 67rem;
+      width: 100%;
       padding: 20px 20px;
+      margin-top: 50px;
 
-      .perguntas-title{
+      .perguntas-title {
+        width: 100%;
+        margin: 0px 0px 20px 0px;
+      }
 
-      }
-      .perguntas-1{
+      .perguntas-card{
         display: flex;
         background-color: rgba(43, 43, 43, 1);
-        width: 97rem;
+        width: 100%;
         padding: 10px;
         border-radius: 10px;
+        margin-bottom: 20px;
       }
-      .perguntas-2{
+
+      .pergunta-resp {
         display: flex;
-        background-color: rgba(43, 43, 43, 1);
-        width: 97rem;
-        padding: 10px;
-        border-radius: 10px;
-      }
-      .perguntas-3{
-        display: flex;
-        background-color: rgba(43, 43, 43, 1);
-        width: 97rem;
-        padding: 10px;
-        border-radius: 10px;
-      }
-      .perguntas-4{
-        display: flex;
-        background-color: rgba(43, 43, 43, 1);
-        width: 97rem;
-        padding: 10px;
-        border-radius: 10px;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+
+        width: 100%;
+        height: auto;
+        padding: 0px 20px 40px 20px;
       }
     }
     .botao{
       cursor: pointer;
-     
       transition: 0.1s;
     }
 

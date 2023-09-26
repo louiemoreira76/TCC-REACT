@@ -16,7 +16,8 @@ body {
     align-items: center;
 
     width: 100%;
-    padding: 20px 0px 20px 100px;
+    padding: 0px 0px 20px 100px;
     color: white;
-    
+    position: relative;
+    z-index: 1;
 }

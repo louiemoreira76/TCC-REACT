@@ -25,19 +25,33 @@ export default function Produto() {{
             <BarraDeCima/>
             <section id="produto">
                 
-                <section className="info-produto">      
+                <section id="info-produto">      
                     <div className="titulo">
                         <h1>The Texas Chain Saw Massacre</h1>
                         <p>O personagem Leatherface teve como inspiração o assassino serial Ed Gein, (1906-1984), que deu origem a outros vilões em outros livros e filmes, mas o caso real do assassino é bem mais monstruoso do que qualquer ficção. Sua primeira vítima foi seu irmão Henry, morto em 1944, embora nada tenha sido provado na época. No ano seguinte, a mãe dele morreu, e então Gein perdeu a razão e, eventualmente, começou a criar roupas e acessórios dos corpos de suas vítimas, das quais guardava os órgãos na sua casa.</p>
                     </div>
-                    <div className="classificacao">
+                    <section id='Comprar'>
+                        <div className='info'>
+                            <h1>R$109,90</h1>
+                        </div>
+                        <div className='acoes'>
+                            <button>Comprar</button>
+                            <div className='paraconta carrin'>
+
+                            </div>
+                            <div className='paraconta fav'>
+
+                            </div>
+                        </div>
+                    </section>
+                    <div id="classificacao">
                         <div className="classificado">
                             <img src="" />
                         </div>
                     </div>
                 </section>
 
-                <main className="produto">
+                <main id="produto-images">
                     <div className="mainimg">
                         <div className="imagem">
                             <img src="/assets/images/teste/jogo.jpg" />
@@ -50,6 +64,10 @@ export default function Produto() {{
                         <div className="imagem">
                             <img src="/assets/images/teste/jogo2.jfif" />
                         </div>
+                        <div className="imagem">
+                            <img src="/assets/images/teste/jogo2.jfif" />
+                        </div>
+                        
                     </div>
                 </main>
 
@@ -67,6 +85,7 @@ export default function Produto() {{
             </nav>
 
             {mostdesc == true &&
+            <>
             <section id="descEstatus">
                 <div className="desc">
                     <h1>Sobre</h1>
@@ -126,7 +145,121 @@ export default function Produto() {{
                     </div>
                     <div></div>
                 </div>
-            </section>}
+                
+            </section>
+            
+            <section id='titles'>
+                <h1 className='tinf'>Os mais jogados</h1>
+                <div className='temas'>
+                    <p>Games</p>
+                    <p>Novos</p>
+                    <p>Bombando</p>
+                </div>
+            </section>
+
+
+            <div id="produtos">  
+                <section className='produto'>
+                    <div className='imagem-produto'>
+                        <div className='sombra'>
+                            <div className='linha'></div>
+                        </div>
+                        <div className='produtoIMG'>
+                            <img src="/assets/images/teste/jogo.jpg" />
+                        </div>
+                    </div>
+                    <div className='informacoes'>
+                        <div className='dados'>
+                            <a href="http://localhost:3000/produto">The Texas Chain Saw Massacre</a>
+                            <p>Sumo Nottingham</p>
+                        </div>
+                        <div className='info'>
+                            <h3>Novidade</h3>
+                        </div>
+                    </div>
+                </section>
+
+                <section className='produto'>
+                    <div className='imagem-produto'>
+                        <div className='sombra'>
+                            <div className='linha'></div>
+                        </div>
+                        <div className='produtoIMG'>
+                            <img src="/assets/images/teste/uau.jpg" />
+                        </div>
+                    </div>
+                    <div className='informacoes'>
+                        <div className='dados'>
+                            <a href="http://localhost:3000/produto">The Texas Chain Saw Massacre</a>
+                            <p>Sumo Nottingham</p>
+                        </div>
+                        <div className='info'>
+                            <h3>Novidade</h3>
+                        </div>
+                    </div>
+                </section>
+
+                <section className='produto'>
+                    <div className='imagem-produto'>
+                        <div className='sombra'>
+                            <div className='linha'></div>
+                        </div>
+                        <div className='produtoIMG'>
+                            <img src="/assets/images/teste/futzada.webp" />
+                        </div>
+                    </div>
+                    <div className='informacoes'>
+                        <div className='dados'>
+                            <a href="http://localhost:3000/produto">The Texas Chain Saw Massacre</a>
+                            <p>Sumo Nottingham</p>
+                        </div>
+                        <div className='info'>
+                            <h3>Novidade</h3>
+                        </div>
+                    </div>
+                </section>
+
+                <section className='produto'>
+                    <div className='imagem-produto'>
+                        <div className='sombra'>
+                            <div className='linha'></div>
+                        </div>
+                        <div className='produtoIMG'>
+                            <img src="/assets/images/teste/starfield.jpg" />
+                        </div>
+                    </div>
+                    <div className='informacoes'>
+                        <div className='dados'>
+                            <a href="http://localhost:3000/produto">The Texas Chain Saw Massacre</a>
+                            <p>Sumo Nottingham</p>
+                        </div>
+                        <div className='info'>
+                            <h3>Novidade</h3>
+                        </div>
+                    </div>
+                </section>
+
+                <section className='produto'>
+                    <div className='imagem-produto'>
+                        <div className='sombra'>
+                            <div className='linha'></div>
+                        </div>
+                        <div className='produtoIMG'>
+                            <img src="/assets/images/teste/dead-by-daylight.jpg" />
+                        </div>
+                    </div>
+                    <div className='informacoes'>
+                        <div className='dados'>
+                            <a href="http://localhost:3000/produto">The Texas Chain Saw Massacre</a>
+                            <p>Sumo Nottingham</p>
+                        </div>
+                        <div className='info'>
+                            <h3>Novidade</h3>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            </>}
 
             {mostcoment == true &&
             <section id="comentarios">
@@ -179,21 +312,72 @@ export default function Produto() {{
                     <button>Adicionar comentario</button>
                 </div>
                 <div className="comentarios">
-                    <div className="comentario">
 
-                    </div>
                     <div className="comentario">
+                        <div className='conteudo'>
+                            <section className='c-user'>
+                                <div className='c-user-image'>
 
+                                </div>
+                                <h1>Davizin do Corre</h1>
+                            </section>
+                            <main id='comentario'>
+                                <p>Sem dúvida, "Aurora Eterna" é uma obra-prima que mergulha os jogadores em um mundo de fantasia deslumbrante e imersivo. Desde o momento em que você inicia o jogo, é cativado por sua narrativa rica e envolvente, que tece uma teia de mistério e descoberta a cada passo.
+Os visuais de "Aurora Eterna" são simplesmente deslumbrantes. Cada cenário é meticulosamente projetado, repleto de detalhes que enriquecem a experiência. Desde as paisagens pitorescas até os interiores intricados, é evidente o cuidado colocado em cada pixel. A iluminação dinâmica e os efeitos visuais de tirar o fôlego transportam os jogadores para um mundo que parece ganhar vida.</p>
+                            </main>
+                        </div>
+                        <section className='estrelas'>
+                            <img src="/assets/images/avaliacao/estrela.png" />
+                            <img src="/assets/images/avaliacao/estrela.png" />
+                            <img src="/assets/images/avaliacao/estrela.png" />
+                            <img src="/assets/images/avaliacao/estrela.png" />
+                            <img src="/assets/images/avaliacao/estrela.png" />
+                        </section>
                     </div>
+
                     <div className="comentario">
+                        <div className='conteudo'>
+                            <section className='c-user'>
+                                <div className='c-user-image'>
 
+                                </div>
+                                <h1>Luis misera</h1>
+                            </section>
+                            <main id='comentario'>
+                                <p>Sem dúvida, "Aurora Eterna" é uma obra-prima que mergulha os jogadores em um mundo de fantasia deslumbrante e imersivo. Desde o momento em que você inicia o jogo, é cativado por sua narrativa rica e envolvente, que tece uma teia de mistério e descoberta a cada passo.   
+                                </p>
+                            </main>
+                        </div>
+                        <section className='estrelas'>
+                            <img src="/assets/images/avaliacao/estrela.png" />
+                            <img src="/assets/images/avaliacao/estrela.png" />
+                            <img src="/assets/images/avaliacao/estrela.png" />
+                        </section>
                     </div>
+
                     <div className="comentario">
+                        <div className='conteudo'>
+                            <section className='c-user'>
+                                <div className='c-user-image'>
 
-                    </div>
-                    <div className="comentario">
-
-                    </div>
+                                </div>
+                                <h1>Davizin do Corre</h1>
+                            </section>
+                            <main id='comentario'>
+                                <p>Sem dúvida, "Aurora Eterna" é uma obra-prima que mergulha os jogadores em um mundo de fantasia deslumbrante e imersivo. Desde o momento em que você inicia o jogo, é cativado por sua narrativa rica e envolvente, que tece uma teia de mistério e descoberta a cada passo.
+                                Os visuais de "Aurora Eterna" são simplesmente deslumbrantes. Cada cenário é meticulosamente projetado, repleto de detalhes que enriquecem a experiência. Desde as paisagens pitorescas até os interiores intricados, é evidente o cuidado colocado em cada pixel. A iluminação dinâmica e os efeitos visuais de tirar o fôlego transportam os jogadores para um mundo que parece ganhar vida
+                                Os visuais de "Aurora Eterna" são simplesmente deslumbrantes. Cada cenário é meticulosamente projetado, repleto de detalhes que enriquecem a experiência. Desde as paisagens pitorescas até os interiores intricados, é evidente o cuidado colocado em cada pixel. A iluminação dinâmica e os efeitos visuais de tirar o fôlego transportam os jogadores para um mundo que parece ganhar vida
+                                </p>
+                            </main>
+                        </div>
+                        <section className='estrelas'>
+                            <img src="/assets/images/avaliacao/estrela.png" />
+                            <img src="/assets/images/avaliacao/estrela.png" />
+                            <img src="/assets/images/avaliacao/estrela.png" />
+                            <img src="/assets/images/avaliacao/estrela.png" />
+                            <img src="/assets/images/avaliacao/estrela.png" />
+                        </section>
+                    </div>  
                     
                 </div>
             </section>}

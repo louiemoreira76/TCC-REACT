@@ -6,7 +6,38 @@ import BarraDeCima from '../../components/baraDeCima'
 import FooterPage from '../../components/footerpage/index,'
 
 export default function Planos(){
+    const [perguntaum, setPerguntaum] = useState(false)
+    const [perguntadois, setPerguntadois] = useState(false)
+    const [perguntatres, setPerguntatres] = useState(false)
+    const [perguntaquatro, setPerguntaquatro] = useState(false)
 
+    function PerguntaumF() {
+        setPerguntaum(!perguntaum)
+        setPerguntadois(false)
+        setPerguntatres(false)
+        setPerguntaquatro(false)
+    }
+
+    function PerguntadoisF() {
+        setPerguntaum(false)
+        setPerguntadois(!perguntadois)
+        setPerguntatres(false)
+        setPerguntaquatro(false)
+    }
+
+    function PerguntatresF() {
+        setPerguntaum(false)
+        setPerguntadois(false)
+        setPerguntatres(!perguntatres)
+        setPerguntaquatro(false)
+    }
+
+    function PerguntaquatroF() {
+        setPerguntaum(false)
+        setPerguntadois(false)
+        setPerguntatres(false)
+        setPerguntaquatro(!perguntaquatro)
+    }
 
     return(
         <div id='Plano'>
@@ -61,51 +92,51 @@ export default function Planos(){
 
                         <div className='planos1-gamers-Recursos-p'>
                         <p>Jogue uma biblioteca com mais de 100 jogos para pc</p>
-                        <hr/>
+                        <div className='barrinha'></div>
                         <p>Descontos e promoções exclusivos para integrantes</p>
-                        <hr/>
+                        <div className='barrinha'></div>
                         <p>Exclusivos da Game Maker no lançamento</p>
-                        <hr/>
+                        <div className='barrinha'></div>
                         <p>Vantagens como, complementos, etc</p>
-                        <hr/>
+                        <div className='barrinha'></div>
                         <p>Jogos da nuvem</p>
-                        <hr/>
+                        <div className='barrinha'></div>
                         </div>
 
                     </div>
 
                     <div className='planos1-gamers-Diamond'>
-                        <h1>Diamond</h1>
+                        <h1>DimaSync</h1>
 
                         <div className='planos1-gamers-Recursos-g'>
                         <p>Sim</p>
-                        <hr/>
+                        <div className='barrinha a'></div>
                         <p>Sim</p>
-                        <hr/>
+                        <div className='barrinha a'></div>
                         <p>Sim</p>
-                        <hr/>
+                        <div className='barrinha a'></div>
                         <p>Sim</p>
-                        <hr/>
+                        <div className='barrinha a'></div>
                         <p>Sim</p>
-                        <hr/>
+                        <div className='barrinha a'></div>
                         </div>
                     
                     </div>
 
                     <div className='planos1-gamers-Gold'>
-                        <h1>Gold</h1>
+                        <h1>UltraSync</h1>
 
                         <div className='planos1-gamers-Recursos-o'>
                         <p>Sim</p>
-                        <hr/>
+                        <div className='barrinha b'></div>
                         <p>Sim</p>
-                        <hr/>
+                        <div className='barrinha b'></div>
                         <p>Sim</p>
-                        <hr/>
-                        <p>Sim</p>
-                        <hr/>
-                        <p>Sim</p>
-                        <hr/>
+                        <div className='barrinha b'></div>
+                        <p>Não</p>
+                        <div className='barrinha b'></div>
+                        <p>Não</p>
+                        <div className='barrinha b'></div>
                         </div>
             
                     </div>
@@ -151,13 +182,13 @@ export default function Planos(){
 
                             <div className='planos2-gamers-Recursos-p'>
                             <p>Biblioteca imensa de extensões para nossa Engine</p>
-                            <hr/>
+                            <div className='barrinha'></div>
                             <p>Acesso a 7 videos mostrando como usar a Engine</p>
-                            <hr/>
+                            <div className='barrinha'></div>
                             <p>Jogos feitos por voce estarao na sessao “DevMaker”</p>
-                            <hr/>
+                            <div className='barrinha'></div>
                             <p>Assistente que estara disponivel sempre pra você</p>
-                            <hr/>
+                            <div className='barrinha'></div>
                             </div>
 
                         </div>
@@ -167,13 +198,13 @@ export default function Planos(){
 
                             <div className='planos2-gamers-Programer-o'>
                             <p>Sim</p>
-                            <hr/>
+                                <div className='barrinha c'></div>
                             <p>Sim</p>
-                            <hr/>
+                                <div className='barrinha c'></div>
                             <p>Sim</p>
-                            <hr/>
+                                <div className='barrinha c'></div>
                             <p>Sim</p>
-                            <hr/>
+                                <div className='barrinha c'></div>
                             <div className='kkkk'></div>
                             </div>
                         </div>
@@ -201,25 +232,41 @@ export default function Planos(){
                         <h1>Perguntas frequentes</h1>
                     </div>
 
-                    <section className='perguntas-1'>
+                    <section onClick={PerguntaumF} className='perguntas-card'>
                         <h1>O que são esses planos para pc?</h1>
-
                    </section>
 
-                   <article className='perguntas-2'>
+                   {perguntaum == true &&
+                    <nav className='pergunta-resp'>
+                        <p>Os planos de serviço de games são uma abordagem revolucionária para a experiência de jogos, oferecendo aos jogadores uma maneira completamente nova de explorar o mundo dos jogos. Imagine que, em vez de comprar jogos individuais separadamente, você tenha acesso a uma vasta biblioteca de jogos, conteúdos extras e vantagens, tudo por meio de uma assinatura ou modelo de pagamento recorrente. Esses planos são oferecidos por lojas de jogos como a Game Maker e transformam a maneira como você joga e experimenta os jogos.</p>
+                   </nav>}
+
+                   <section onClick={PerguntadoisF} className='perguntas-card'>
                         <h1>Como obter algum desses planos?</h1>
-
-                   </article>
-
-                   <section className='perguntas-3'>
-                        <h1>Com que frequencia sao adicionados os jogos na biblioteca?</h1>
-
                    </section>
 
-                   <article className='perguntas-4'>
-                        <h1>Como saber quando um jogo irá sair do catálogo?</h1>
+                   {perguntadois == true &&
+                    <nav className='pergunta-resp'>
+                        <p>Os planos de serviço de games são uma abordagem revolucionária para a experiência de jogos, oferecendo aos jogadores uma maneira completamente nova de explorar o mundo dos jogos.</p>
+                   </nav>}
 
-                   </article>
+                   <section onClick={PerguntatresF} className='perguntas-card'>
+                        <h1>Com que frequencia sao adicionados os jogos na biblioteca?</h1>
+                   </section>
+
+                   {perguntatres == true &&
+                    <nav className='pergunta-resp'>
+                        <p>Os planos de serviço de games são uma abordagem revolucionária para a experiência de jogos, oferecendo aos jogadores uma maneira completamente nova de explorar o mundo dos jogos. Os planos de serviço de games são uma abordagem revolucionária para a experiência de jogos, oferecendo aos jogadores uma maneira completamente nova de explorar o mundo dos jogos. Os planos de serviço de games são uma abordagem revolucionária para a experiência de jogos, oferecendo aos jogadores uma maneira completamente nova de explorar o mundo dos jogos.</p>
+                   </nav>}
+
+                   <section onClick={PerguntaquatroF} className='perguntas-card'>
+                        <h1>Como saber quando um jogo irá sair do catálogo?</h1>
+                   </section>
+
+                   {perguntaquatro == true &&
+                    <nav className='pergunta-resp'>
+                        <p>Os planos de serviço de games são uma abordagem revolucionária para a experiência de jogos, oferecendo aos jogadores uma maneira completamente nova de explorar o mundo dos jogos. Os planos de serviço de games são uma abordagem revolucionária para a experiência de jogos, oferecendo aos jogadores uma maneira completamente nova de explorar o mundo dos jogos. Os planos de serviço de games são uma abordagem revolucionária.</p>
+                   </nav>}
                 </footer>
 
                 <FooterPage />

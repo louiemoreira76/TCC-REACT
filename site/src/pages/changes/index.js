@@ -8,7 +8,6 @@ import BarraDeCima from '../../components/baraDeCima'
 import LinksPerfil from '../../components/perfil_mudar_links/'
 
 export default function MudarPerfil(){
-
     const [backgroundColor, setBackgroundColor] = useState('linear-gradient(to bottom, rgba(206, 165, 60, 1), rgba(175, 64, 49, 1))');
 
     const MudarCor = (NovaCor) => {
@@ -38,19 +37,19 @@ export default function MudarPerfil(){
                     
                     <div className='Information-name'>
                         <h5>Nome</h5>
-                        <input type="text" placeholder='Digite aqui seu nome'/>
+                        <input type="text" required="required" placeholder='Digite aqui seu nome'/>
                     </div>
 
                     <div className='Information-DT-g'>
                         <div className='Information-DT'>
                             <h5>Data de Nascimento</h5>
-                            <input type="date" placeholder='Sua data de Nascimento' />
+                            <input type="date" required="required" placeholder='Sua data de Nascimento' />
                         </div>
 
                         <div className='Information-g'>
                             <h5>Genero</h5>
 
-                            <select id="gender" name="gender">
+                            <select required="required" id="gender" name="gender">
                                 <option value="male">Masculino</option>
                                 <option value="female">Feminino</option>
                                 <option value="other">Outro</option>
@@ -60,7 +59,8 @@ export default function MudarPerfil(){
 
                     <div className='Information-cpf'>
                         <h5>CPF</h5>
-                        <input type="password" />
+                        <input required="required"
+                        type="password" />
                     </div>
 
                     <button>Alterar dados</button>
