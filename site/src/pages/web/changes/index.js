@@ -1,11 +1,11 @@
 import './index.scss'
 import { useState } from 'react'
 
-import BarraLateral from '../../components/barraLateral'
-import BarraDeCima from '../../components/baraDeCima'
+import BarraLateral from '../../../components/barraLateral'
+import BarraDeCima from '../../../components/baraDeCima'
 
 
-import LinksPerfil from '../../components/perfil_mudar_links/'
+import LinksPerfil from '../../../components/perfil_mudar_links'
 
 export default function MudarPerfil(){
     const [backgroundColor, setBackgroundColor] = useState('linear-gradient(to bottom, rgba(206, 165, 60, 1), rgba(175, 64, 49, 1))');

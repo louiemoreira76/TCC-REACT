@@ -1,6 +1,6 @@
 import './index.scss'
 
-import BarraLateral from '../../components/barraLateral'
+import BarraLateral from '../../../components/barraLateral'
 
 
 export default function Cadastro(){

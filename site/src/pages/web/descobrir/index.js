@@ -1,8 +1,8 @@
 import './index.scss'
 
-import BarraLateral from '../../components/barraLateral'
-import BarraDeCima from '../../components/baraDeCima'
-import FooterPage from '../../components/footerpage/index,'
+import BarraLateral from '../../../components/barraLateral'
+import BarraDeCima from '../../../components/baraDeCima'
+import FooterPage from '../../../components/footerpage/index,'
 import { useState, useEffect } from 'react'
 
 export default function Descobrir () {

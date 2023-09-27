@@ -1,13 +1,16 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import Produto from './pages/produto';
-import Planos from './pages/planos';
-import Conquistas from './pages/conquistas';
-import MudarPerfil from './pages/changes';
-import Navegar from './pages/navegar';
-import Admin from './pages/admin';
-import GameSync from './pages/GameSync';
-import Descobrir from './pages/descobrir';
+import Produto from './pages/web/produto';
+import Planos from './pages/web/planos';
+import Conquistas from './pages/web/conquistas';
+import MudarPerfil from './pages/web/changes';
+import Navegar from './pages/web/navegar';
+
+import GameSync from './pages/web/GameSync';
+import Descobrir from './pages/web/descobrir';
+
+import CadastroAdmin from './pages/admin/login_admin'
+
 
 export default function Routess(){
     return(
@@ -19,8 +22,9 @@ export default function Routess(){
                 <Route path='/conquistas' element={<Conquistas/>} />
                 <Route path='/perfil' element={<MudarPerfil/>} />
                 <Route path='/procurar' element={<Navegar/>} />
-                <Route path='/admin' element={<Admin/>} />
                 <Route path='/sobregamesync' element={<GameSync/>} />
+
+                <Route path='/admin' element={<CadastroAdmin/>} />
             </Routes>
         </BrowserRouter>
     )

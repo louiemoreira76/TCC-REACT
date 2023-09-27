@@ -1,10 +1,10 @@
 import './index.scss'
 import axios from 'axios'
 
-import BarraLateral from '../../components/barraLateral'
-import BarraDeCima from '../../components/baraDeCima'
-import FooterPage from '../../components/footerpage/index,'
-import Produto from '../../components/produto'
+import BarraLateral from '../../../components/barraLateral'
+import BarraDeCima from '../../../components/baraDeCima'
+import FooterPage from '../../../components/footerpage/index,'
+import Produto from '../../../components/produto'
 
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
